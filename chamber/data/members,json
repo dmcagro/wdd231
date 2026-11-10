@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Premier Business Solutions",
+    "address": "12 Awolowo Avenue, Bodija, Ibadan",
+    "phone": "+234 801 111 2233",
+    "website": "https://example.com",
+    "image": "premier.jpg",
+    "membershipLevel": 3,
+    "info": "Provides business consulting and professional support services."
+  },
+  {
+    "name": "Heritage Foods and Supplies",
+    "address": "25 Ring Road, Ibadan",
+    "phone": "+234 802 222 3344",
+    "website": "https://example.com",
+    "image": "heritage.jpg",
+    "membershipLevel": 2,
+    "info": "A food supply and distribution business serving customers across Ibadan."
+  },
+  {
+    "name": "Bright Future Technologies",
+    "address": "8 Mokola Hill, Ibadan",
+    "phone": "+234 803 333 4455",
+    "website": "https://example.com",
+    "image": "brightfuture.jpg",
+    "membershipLevel": 3,
+    "info": "Offers digital solutions, IT support and technology services."
+  },
+  {
+    "name": "Royal Touch Interiors",
+    "address": "16 New Bodija, Ibadan",
+    "phone": "+234 804 444 5566",
+    "website": "https://example.com",
+    "image": "royaltouch.jpg",
+    "membershipLevel": 2,
+    "info": "Provides interior decoration and furnishing services."
+  },
+  {
+    "name": "Greenfield Agro Ventures",
+    "address": "5 Iwo Road, Ibadan",
+    "phone": "+234 805 555 6677",
+    "website": "https://example.com",
+    "image": "greenfield.jpg",
+    "membershipLevel": 1,
+    "info": "Engages in agricultural production and farm-related services."
+  },
+  {
+    "name": "Excellence Learning Centre",
+    "address": "30 Oke-Ado, Ibadan",
+    "phone": "+234 806 666 7788",
+    "website": "https://example.com",
+    "image": "excellence.jpg",
+    "membershipLevel": 1,
+    "info": "Provides educational and professional development programmes."
+  },
+  {
+    "name": "Urban Style Fashion House",
+    "address": "14 Dugbe, Ibadan",
+    "phone": "+234 807 777 8899",
+    "website": "https://example.com",
+    "image": "urbanstyle.jpg",
+    "membershipLevel": 2,
+    "info": "Offers fashion design, clothing and ready-to-wear services."
+  }
+]
