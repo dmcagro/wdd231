@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Welcome to the Ibadan Chamber of Commerce. Discover local businesses, business opportunities, events and networking opportunities in Ibadan.">
+
+    <meta name="author" content="Your Full Name">
+
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and creating opportunities in Ibadan.">
+    <meta property="og:image" content="https://dmcagro.github.io/wdd231/chamber/images/chamber-social.jpg">
+    <meta property="og:url" content="https://dmcagro.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <title>Home | Ibadan Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <p class="site-name">Ibadan Chamber of Commerce</p>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html">Join</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <h1>Welcome to Ibadan Chamber of Commerce</h1>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <img src="images/ibadan-hero.jpg" alt="Ibadan business district and commercial environment">
+
+            <div class="hero-content">
+                <h2>Connecting Businesses. Creating Opportunities.</h2>
+
+                <p>
+                    Together, we build a stronger business community
+                    in Ibadan.
+                </p>
+
+                <a href="join.html" class="join-button">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Events Section -->
+        <section class="home-events">
+
+            <h2>Upcoming Events</h2>
+
+            <div id="events-container">
+
+                <article class="event-card">
+                    <h3>Ibadan Business Networking Forum</h3>
+                    <p>Date: To be announced</p>
+                    <p>
+                        Connect with entrepreneurs and business
+                        professionals across Ibadan.
+                    </p>
+                </article>
+
+                <article class="event-card">
+                    <h3>Small Business Development Workshop</h3>
+                    <p>Date: To be announced</p>
+                    <p>
+                        Learn practical strategies for business
+                        growth and development.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather-section">
+
+            <h2>Ibadan Weather</h2>
+
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+
+            <h3>Three-Day Forecast</h3>
+
+            <div id="weather-forecast">
+                <p>Loading forecast...</p>
+            </div>
+
+        </section>
+
+        <!-- Business Spotlights -->
+        <section class="spotlight-section">
+
+            <h2>Business Spotlights</h2>
+
+            <p>
+                Meet some of the outstanding businesses
+                in our Chamber community.
+            </p>
+
+            <div id="spotlight-container">
+                <p>Loading business spotlights...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-contact">
+            <h2>Ibadan Chamber of Commerce</h2>
+
+            <p>Ibadan, Oyo State, Nigeria</p>
+
+            <p>Email: info@ibadanchamber.example</p>
+
+            <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="footer-details">
+
+            <p>
+                &copy; <span id="current-year"></span>
+                Ibadan Chamber of Commerce
+            </p>
+
+            <p>Your Full Name | WDD 231</p>
+
+            <p>
+                Last Modified:
+                <span id="last-modified"></span>
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
