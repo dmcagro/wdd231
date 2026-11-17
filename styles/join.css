@@ -1,0 +1,336 @@
+/* JOIN PAGE */
+
+.join-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 25px 20px;
+}
+
+.join-intro {
+    text-align: center;
+    padding: 25px 10px;
+}
+
+.join-intro h1 {
+    color: #222;
+    font-size: 2rem;
+}
+
+.join-intro p {
+    max-width: 750px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+
+/* MAIN LAYOUT */
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-top: 25px;
+}
+
+
+/* FORM */
+
+.form-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2,
+.membership-section h2 {
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.form-intro {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+#membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#membership-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 500;
+}
+
+#membership-form input:not([type="hidden"]),
+#membership-form select,
+#membership-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+#membership-form input:focus,
+#membership-form select:focus,
+#membership-form textarea:focus {
+    outline: 2px solid #c69b35;
+    border-color: #c69b35;
+}
+
+#membership-form textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #a77b20;
+}
+
+
+/* MEMBERSHIP CARDS */
+
+.membership-section {
+    padding: 10px;
+}
+
+.membership-section>p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.membership-card {
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #c69b35;
+
+    opacity: 0;
+    animation: cardEntrance 0.8s ease forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.membership-card h3 {
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.membership-card p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    display: inline-block;
+    background: #222;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.learn-more:hover {
+    background: #a77b20;
+}
+
+
+/* CARD ANIMATION */
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* DIALOG MODALS */
+
+dialog {
+    width: min(90%, 500px);
+    border: none;
+    border-radius: 10px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+dialog h2 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+dialog ul {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+.close-dialog {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-dialog:hover {
+    background: #a77b20;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 40px;
+}
+
+
+/* REDUCE ANIMATION FOR USERS WHO PREFER IT */
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    * {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+/* LARGER SCREENS */
+
+@media screen and (min-width: 768px) {
+
+    .join-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-card {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    .membership-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+/* THANK YOU PAGE */
+
+.thankyou-main {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.thankyou-box {
+    background: #fff;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.thankyou-box h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.thankyou-box h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.thankyou-box>p {
+    line-height: 1.7;
+}
+
+.application-details {
+    background: #f5f5f5;
+    padding: 20px;
+    border-left: 5px solid #c69b35;
+    border-radius: 5px;
+}
+
+.application-details p {
+    margin: 12px 0;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 5px;
+}
+
+.back-home:hover {
+    background: #a77b20;
+}
